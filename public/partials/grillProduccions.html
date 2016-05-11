@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-xs-1">Ordre </div>
+  <div class="col-xs-1">Nº Prod.</div>
+  <div class="col-xs-1">Data</div>
+  <div class="col-xs-3">Article</div>
+  <div class="col-xs-1">T</div>
+  <div class="col-xs-2">Proveidor</div>
+  <div class="col-xs-1">Albarà</div>
+  <div class="col-xs-1">Alb. data</div>
+  <div class="col-xs-1">Sel</div>
+</div>
+
+<!-- cercador per produccions -->
+<div class="row page-header">
+  <div class="col-xs-1"><input type="text" size="5" ng-model="searchText.ordre"> </div>
+  <div class="col-xs-1"><input type="text" size="8" ng-model="searchText.produccio"> </div>
+  <div class="col-xs-1"><input type="text" size="8" ng-model="searchText.data | date : 'dd-MM-yy'"> </div>
+  <div class="col-xs-3"><input type="text" ng-model="searchText.article"> </div>
+  <div class="col-xs-1"></div>
+  <div class="col-xs-2"><input type="text" ng-model="searchText.proveidor.nombre"> </div>
+  <div class="col-xs-1"><input type="text" size="5" ng-model="searchText.albara"> </div>
+  <div class="col-xs-1"></div>
+  <div class="col-xs-1"></div>
+</div>
+
+<div class="row" ng-repeat="reg in produccions | filter:searchText">
+  <div class="col-xs-1">{{reg.ordre}}</div>
+  <div class="col-xs-1">{{reg.produccio}}</div>
+  <div class="col-xs-1">{{reg.data | date: 'dd-MM-yy'}}</div>
+  <div class="col-xs-3" align="left">
+    <div class="row"><div class="col-xs-3">{{reg.article.codigo}}</div><div class="col-xs-5-offset-4">{{reg.article.nombre}}</div></div>
+  </div>
+  <div class="col-xs-1">
+    <input type="checkbox" value="{{reg.produccio}}" ng-if="reg.terminado" checked>
+    <input type="checkbox" value="{{reg.produccio}}" ng-if="!reg.terminado">
+  </div>
+  <div class="col-xs-2">{{reg.proveidor.codigo+": "+reg.proveidor.nombre}}</div>
+  <div class="col-xs-1">{{reg.albara}}</div>
+  <div class="col-xs-1">{{reg.data2 | date : 'dd-MM-yy' }}</div>
+  <div class="col-xs-1"><input type="checkbox" value="T-{{reg.produccio}}"></div>
+</div>

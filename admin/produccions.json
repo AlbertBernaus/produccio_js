@@ -1,0 +1,129 @@
+[
+  {
+    "produccio": "160001",
+    "ordre": "0",
+    "data": "3213213215",
+    "article": {"codigo":"798027","nombre": "Cinta de persiana gris 22mm/6mts"},
+    "terminado": false,
+    "proveidor": {
+      "codigo": "40000001",
+      "nombre": "MESQUECORDA, S.L."
+    },
+    "data2":"312313214",
+    "escandall":[
+      {
+        "linia" : 1,
+        "component": "3-3700025",
+        "unitats": 6
+      },
+      {
+        "linia" : 2,
+        "component": "CART0002",
+        "unitats": 1
+      },
+      {
+        "linia" : 3,
+        "component": "MAOF0008",
+        "unitats": 1
+      },
+      {
+        "linia" : 4,
+        "component": "9-925435",
+        "unitats": 0.071
+      }
+    ]
+  },
+  {
+    "produccio": "160002",
+    "ordre": "0",
+    "data": "9885456456",
+    "article": {"codigo":"B.PAL-12","nombre": "Blister piqueta arandela 12mm"},
+    "terminado": false,
+    "proveidor": {
+      "codigo": "40000001",
+      "nombre": "MESQUECORDA, S.L."
+    },
+    "data2":"312313214",
+    "escandall":[
+      {
+        "linia" : 1,
+        "component": "PAL-12",
+        "unitats": 6
+      },
+      {
+        "linia" : 2,
+        "component": "CART0003",
+        "unitats": 1
+      },
+      {
+        "linia" : 3,
+        "component": "BOSSA-180",
+        "unitats": 1
+      },
+      {
+        "linia" : 4,
+        "component": "9-925435",
+        "unitats": 0.071
+      }
+    ]
+  },
+  {
+    "produccio": "160003",
+    "ordre": "0",
+    "data": "541132132",
+    "article": {"codigo":"810002","nombre": "Mosqueton Bombero Galv. 5x50mm "},
+    "terminado": false,
+    "proveidor": {
+      "codigo": "40000001",
+      "nombre": "MESQUECORDA, S.L."
+    },
+    "data2":"312313214",
+    "escandall":[
+      {
+        "linia" : 1,
+        "component": "3-810002",
+        "unitats": 1
+      },
+      {
+        "linia" : 2,
+        "component": "CART0006",
+        "unitats": 1
+      },
+      {
+        "linia" : 3,
+        "component": "9-927006",
+        "unitats": 1
+      },
+      {
+        "linia" : 4,
+        "component": "MAN.BLIST",
+        "unitats": 0.2
+      }
+    ]
+  },
+  {
+    "produccio": "160004",
+    "ordre": "0",
+    "data": "456465498",
+    "article": {"codigo":"3-600030","nombre": "Bobina sisal 1/2c 20mts "},
+    "terminado": true,
+    "proveidor": {
+      "codigo": "40000028",
+      "nombre": "RGREDES Y CUERDAS, S.L."
+    },
+    "data2":"514123314",
+    "albara" : "258",
+    "escandall": [
+      {
+        "linia" : 1,
+        "component": "032147",
+        "unitats": 0.5
+      },
+      {
+        "linia" : 2,
+        "component": "MAN.SISAL80",
+        "unitats": 1
+      }
+    ]
+  }
+]
